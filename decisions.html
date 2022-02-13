@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <script>
+        function checkMaths(form) {
+            if (form.answerPower.value == "1024") {
+                document.getElementById("powerOutput").innerHTML = "Correct!"
+            } else {
+                document.getElementById("powerOutput").innerHTML = "Incorrect"
+            }
+        }
+    </script>
 </head>
 <body>
+
+<h1>Decisions - Web Development</h1>
+
+<form name='mathsForm'>
+
+    <b>Maths Quiz!</b>
+    <p>
+        <label>What is 2 to the power of 10?</label>
+        <input type='text' size=25 name='answerPower'>
+        <label id="powerOutput"></label>
+    </p>
+    <p>
+        <label>What is the binary equivalent to the decimal number 255?</label>
+        <input type='text' size=25 name='answerBinary'>
+        <label id="binaryOutput"></label>
+    </p>
+    <button onclick="checkMaths(this.form)" type="button"> Check Maths</button>
+</form>
+
 
 </body>
 </html>
