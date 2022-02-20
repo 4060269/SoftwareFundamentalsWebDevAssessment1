@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+    </script>
+    <title>Functions Code</title>
+</head>
+<body>
+
+<h1>For Loops - Web Development</h1>
+
+<p id="result"></p>
+
+<script>
+    function addNumbers(number1, number2) {
+        document.getElementById("result").innerHTML = parseInt(number1) + parseInt(number2);
+    }
+    function subtractNumbers(number1, number2){
+        document.getElementById("result").innerHTML = parseInt(number1) - parseInt(number2);
+    }
+    function multiplyNumbers(number1, number2) {
+        document.getElementById("result").innerHTML = parseInt(number1) * parseInt(number2);
+    }
+    function divideNumbers(number1, number2) {
+        document.getElementById("result").innerHTML = parseInt(number1) / parseInt(number2);
+    }
+</script>
+
+
+<form name='loopForm'>
+    <label><input id="firstNumber" type="number"></label>
+    <label><input id="secondNumber" type="number"></label>
+    <p></p>
+    <button onclick="addNumbers(form.firstNumber.value, form.secondNumber.value)" type="button">Add Numbers</button>
+    <button onclick="subtractNumbers(form.firstNumber.value, form.secondNumber.value)" type="button">Subtract Numbers
+    </button>
+    <button onclick="multiplyNumbers(form.firstNumber.value, form.secondNumber.value)" type="button">Multiply Numbers
+    </button>
+    <button onclick="divideNumbers(form.firstNumber.value, form.secondNumber.value)" type="button">Divide Numbers
+    </button>
+</form>
+
+</body>
+</html>
