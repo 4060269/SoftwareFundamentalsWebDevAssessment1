@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loopCode() {
+            let sum = 0;
+            let number = parseInt(prompt('Enter A Number: '));
+                while (number >= 0){
+                    sum += number;
+                    number = parseInt(prompt('Enter A Number: '));
+                }
+            document.getElementById("outputPosition").innerHTML = sum;
+        }
+    </script>
+    <title>Loop Code</title>
+</head>
+<body>
+
+<h1>For Loops - Web Development</h1>
+
+<p id="outputPosition"></p>
+
+<form name='loopForm'>
+
+    <button onclick="loopCode()" type="button">Run Loop</button>
+</form>
+
+</body>
+</html>

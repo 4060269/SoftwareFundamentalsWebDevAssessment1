@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loopCode() {
+            var numberOutput = "";
+
+            for (let loopCounter=0; loopCounter<100;loopCounter++) {
+                numberOutput = numberOutput + "<br>" + loopCounter;
+            }
+
+            document.getElementById("outputPosition").innerHTML = numberOutput;
+        }
+    </script>
+</head>
+<body>
+
+<h1>For Loops - Web Development</h1>
+
+<p id="outputPosition"></p>
+
+<form name='loopForm'>
+    <button onclick="loopCode()" type="button">Run Loop</button>
+</form>
+
+
+</body>
+</html>

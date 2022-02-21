@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loopCode() {
+            const MIN = 1;
+            const MAX = 10;
+            let guesses = 0;
+            let hint = '';
+            let number = 0;
+            let secretNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+            do {
+                let number = parseInt(prompt(`Please enter a number between ${MIN} and ${MAX}` + hint));
+                guesses++;
+                if (number > secretNumber) {
+                    hint = ", and less than " + number;
+                        } else if (number < secretNumber) {
+                        hint = ", and greater than " + number;
+                        } else if (number === secretNumber) {
+                        alert("Well done! You got the number is " + guesses + " guess/es!");
+                        break;
+                    }
+            } while (number !== secretNumber);
+        }
+    </script>
+    <title>Loop Code</title>
+</head>
+<body>
+
+<h1>For Loops - Web Development</h1>
+
+<p id="outputPosition"></p>
+
+<form name='loopForm'>
+
+    <button onclick="loopCode()" type="button">Run Loop</button>
+</form>
+
+
+</body>
+</html>
