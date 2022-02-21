@@ -23,7 +23,11 @@
         document.getElementById("result").innerHTML = parseInt(number1) * parseInt(number2);
     }
     function divideNumbers(number1, number2) {
-        document.getElementById("result").innerHTML = parseInt(number1) / parseInt(number2);
+        if (number2 == 0) {
+            document.getElementById("result").innerHTML = "Divide By Zero Error";
+    } else {
+            document.getElementById("result").innerHTML = parseInt(number1) / parseInt(number2);
+        }
     }
 </script>
 
