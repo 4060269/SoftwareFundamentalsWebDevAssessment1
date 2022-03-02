@@ -7,8 +7,15 @@
            for (let loopCounter = 0; loopCounter<100; loopCounter++) {
              let randomNumber = Math.random() * 1000;
              randomValues[loopCounter] = randomNumber;
-             alert(randomValues);
            }
+           // alert(randomValues);
+           
+           let total = 0;
+           for (let loopCounter = 0; loopCounter<100; loopCounter++) {
+                total = total + randomValues[loopCounter];
+                let average = total / 100;
+                alert(average);
+               } 
         }
     </script>
     <title>Data Structures Code</title>
