@@ -3,10 +3,25 @@
 <html lang="en">
 <head>
     <script>
-        function dataCode() {
+    function dataCode() {
+        let userDetails = {
+            userName: "user",
+            password: "pass",
+            fullName: "full",
+            email: "mail"
+    }
 
-        }
+    userDetails["userName"] = prompt("What is your username?");
+    userDetails["password"] = prompt("What is your password?");
+    userDetails["fullName"] = prompt("What is your Name?");
+    userDetails["email"] = prompt("What is your email address?");
+
+    var details = userDetails["userName"] + " " + userDetails["password"] + " " + userDetails["fullName"] + " " + userDetails["email"];
+    alert(details);
+        
+    }
     </script>
+    
     <title>Data Structures Code</title>
 </head>
 <body>
